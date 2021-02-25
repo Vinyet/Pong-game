@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Pong!</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css"/>
+	<link rel="icon" type="image/png" href="https://www.flaticon.com/svg/vstatic/svg/2633/2633810.svg?token=exp=1614171921~hmac=94946a6f43da524cae82398e47e6c4e5"/>
+	<script src='main.js'></script>
+</head>
+<body>
+	<h1>P<span>🏓</span>NG</h1>
+	<div class="game-over-container">GAME OVER ☹️</div>
+	<div class="game-container">
+		<div class="instrucciones">
+			<p>¡Bienvenido a Pong! <br>Pulsa el botón para comenzar a jugar.<br/>En este juego manejas ambas palas.</p>
+			<div class="button-container">
+				<button onclick="activate()">JUGAR</button>
+				<button id="btn-stop" onclick="deactivate()"> ⏸️ PAUSAR</button>
+				<button id="btn-restart" onclick="restart()">NUEVA PARTIDA</button>
+			</div>
+		</div>
+		<canvas id="gameCanvas" width=900 height=600></canvas>
+		<div id="score">
+			<h2>SCORE</h2>
+		</div>
+	</div>
+</body>
+</html>
